@@ -20,6 +20,13 @@ namespace MaterialDesignColors.WpfExample.Domain
                         DocumentationLink.DemoPageLink<Home>()
                     }
                 ),
+                new DemoItem("TabControl", new TabControlEx(),
+                    new []
+                    {
+                        new DocumentationLink(DocumentationLinkType.Wiki, $"{ConfigurationManager.AppSettings["GitHub"]}/wiki", "WIKI"),
+                        DocumentationLink.DemoPageLink<Home>()
+                    }
+                ),
                 new DemoItem("Palette", new PaletteSelector { DataContext = new PaletteSelectorViewModel() },
                     new []
                     {
